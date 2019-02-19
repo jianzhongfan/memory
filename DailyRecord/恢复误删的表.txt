@@ -1,0 +1,4 @@
+--查询最近删除记录
+select object_name,original_name,partition_name,type,ts_name,createtime,droptime from recyclebin;
+--恢复某个表的删除
+flashback table table_name to before drop;
